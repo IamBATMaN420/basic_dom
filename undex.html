@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: aliceblue;
+        /* justify-content: center;
+        align-items: center;
+        height: 100vh; */
+      }
+      .highlight {
+        background-color: yellow;
+        color: #1a1a1a;
+      }
+      .text-align-container {
+        text-align: center;
+      }
+
+      #center-button {
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1st problem:→click on the button change the text :→ -->
+    <h1>1st problem</h1>
+    <h1 id="para-1">Lorem ipsum dolor sit amet consectetur.</h1>
+    <button id="change-text">LogIn</button>
+    <hr />
+
+    <!--2nd prblm:-> traversition of DOM i.e. when we click on button the fist thing will be highlighted -->
+    <h1>2nd problem</h1>
+    <h1 id="para-2">traversition of DOM</h1>
+    <ol id="list">
+      <li class="first-list">mango</li>
+      <li>apple</li>
+      <li>lichi</li>
+      <li>bannana</li>
+    </ol>
+    <button id="change-button">click me!</button>
+    <hr />
+
+    <!--3rd problem:-> manipulating the DOM element :-> make biriyani to momo-->
+    <h1>3rd problem</h1>
+    <h3 id="finalorder">
+      <div id="food">order: <span id="biriyani">biriyani</span></div>
+    </h3>
+    <button id="change">change me !!!</button>
+    <hr />
+    <!--4th problem :-> here we will learn about creating  and inserting the DOM elements-->
+    <h1>4th elements</h1>
+    <ul id="tasklist">
+      <li>momo</li>
+      <li>fried-rice</li>
+      <li>biriyani</li>
+    </ul>
+    <div class="text-align-container">
+      <button id="center-button">Click Me!</button>
+    </div>
+
+    <hr />
+
+    <!--5th problem:-> deleting some item in "DOM"-->
+    <h1>5th problem</h1>
+    <h2>
+      <ul id="del-list">
+        <li>mango</li>
+        <li>lichi</li>
+        <li>guava</li>
+        <li>watermelon</li>
+      </ul>
+      <button id="delete">delete item</button>
+    </h2>
+
+    <hr />
+
+    <!--6th problem:-> Event Delegation in "DOM"-->
+    <h2>6th problem</h2>
+    <ul id="myList">
+      <!--in this delegation there is one parent class 
+      and the job is instead of writimg every event-listener
+      we will just write for one. And child will just follow it.
+      -->
+      <li style="cursor: pointer">Item 1</li>
+      <li style="cursor: pointer">Item 2</li>
+      <li style="cursor: pointer">Item 3</li>
+    </ul>
+    <hr />
+    <!--7th problem:-> FORM handling in "DOM"-->
+    <h2>7th problem</h2>
+    <style>
+      #feedback_form {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+    </style>
+    <form
+      action=""
+      id="feedback_form"
+      style="display: flex; align-items: center; justify-content: center"
+    >
+      <label for="feedback_form" style="margin: 10px"
+        >Your feedback is:-></label
+      >
+      <input type="text" id="input_feild" required />
+      <button type="submit" class="btn btn-primary" id="submit_btn">
+        Submit
+      </button>
+    </form>
+    <div
+      id="feedback_rep"
+      style="
+        background-color: blueviolet;
+        border: 3px solid #1a1a1a;
+        padding: 10px;
+        margin: 10px;
+      "
+    ></div>
+    <hr />
+    <!-- 8th problem: dom content is loaded -->
+    <section id="example-8">
+      <h2>DOM is loaded!!!</h2>
+      <p id="domstatus">waitting for the DOM to load...</p>
+    </section>
+    <hr />
+
+    <!-- 9th problem: toggle the highlight -->
+    <h1><div>9th problem</div></h1>
+    <p id="toHighlight">toggle the text !!!</p>
+    <button id="toHighlight_btn">toogle this</button>
+    <script src="./script.js"></script>
+  </body>
+</html>
